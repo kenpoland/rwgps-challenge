@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RideWithGPS 2026-2027 Challenge Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🚴 Bray Wheelers / Audax Challenge Tracker</h1>
+        <p>October 1st, 2026 – May 31st, 2027</p>
+    </header>
+
+    <main>
+        <!-- Master Pot Banner -->
+        <section class="pot-banner">
+            <div class="card">
+                <h3>Total Starting Pool</h3>
+                <p id="total-pool">€1,300</p>
+            </div>
+            <div class="card">
+                <h3>Total Refunds Paid</h3>
+                <p id="total-refunds">€0</p>
+            </div>
+            <div class="card final-pot">
+                <h3>Final Group Pot</h3>
+                <p id="final-pot">€0</p>
+            </div>
+        </section>
+
+        <!-- Side-by-Side Participant Leaderboard & Visual Progress -->
+        <section class="leaderboard-section">
+            <h2>Participant Leaderboard & Side-by-Side Progress</h2>
+            <div class="table-container">
+                <table id="participant-table">
+                    <thead>
+                        <tr>
+                            <th>Participant</th>
+                            <th>Outdoor KM</th>
+                            <th>Indoor KM (Sep)</th>
+                            <th>Refunded (€)</th>
+                            <th>Forfeited (€)</th>
+                            <th>Balance (€)</th>
+                            <th>Audax 400</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- Dynamically populated via app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Side-by-Side Visual Bar Charts -->
+        <section class="charts-section">
+            <h2>Visual Progress Representation</h2>
+            <div class="chart-container" id="visual-bars">
+                <!-- Side-by-side visual progress bars rendered here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
